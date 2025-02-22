@@ -2,14 +2,14 @@
 <html lang="en">
 <head>
     <meta charset="utf-8">
-    <title>Elite Ride  </title>
+    <title>Book Now</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="rezervacija.css">
     <!-- Font Awesome Link for Icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
 </head>
 <body>
-    <nav>
+    <nav id="navbar">
         <!-- Checkbox for toggling menu -->
         <input type="checkbox" id="check">
         <!-- Menu icon -->
@@ -20,49 +20,52 @@
         <a href="index.html"><img src="logoer.png" class="logo"></a>
         <!-- Navigation links -->
         <ul>
-            <li><a href="index.html">Početna</a></li>
-            <li><a href="O-nama.html">O nama</a></li>
-            <li><a href="usluge.html">Usluge</a></li>
-            <li><a href="vozila.html">Vozila</a></li>
-            <li><a href="kontakt.html">Kontakt</a></li>
-            <li><a href="rezervacija.html" class="rez-btn">Rezervišite</a></li>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="O-nama.html">About us</a></li>
+          <li><a href="tours.html">Tours</a></li>
+          <li><a href="kontakt.html">Contact</a></li>
+          <li><a href="rezervacija.html">Book now</a></li>
         </ul>
       </nav>
-      <h1 class="glavnih1">Rezerviši</h1>
+      <h1 class="glavnih1">Book Now</h1>
       <div class="services-divider"></div>
       <div class="container">
         <header>
-            <h1 class="naslovne">Rezerviši</h1>
+            <h1 class="naslovne">Book Now</h1>
         </header>
         <div class="sve">
         <main>
-            <form class="reservation-form" action="mailto:eliteridecg@gmail.com" method="POST" enctype="text/plain">
-                <label for="Tipvoznje">Stavi Tip usluge</label>
-                <select id="Tipvoznje" name="Tipvoznje">
-                    <option value="U-jednom-smeru">U jednom smeru</option>
-                    <option value="Povratna-vožnja">Povratna vožnja</option>
-                    <option value="Od-Tacke-Do-Tacke">Više vožnji</option>
+            <form class="reservation-form" action="mailto:radomanilija06@gmail.com" method="POST" enctype="text/plain">
+                <label for="Type">Type of Ride</label>
+                <select id="Type" name="Type" required>
+                    <option value="Group">Group</option>
+                    <option value="Private">Private</option>
                 </select>
 
-                <label for="Datum">Datum</label>
-                <input type="date" id="Datum" name="Datum" required>
+                <label for="Date">Date</label>
+                <input type="date" id="Date" name="Date" required>
 
-                <label for="Vreme">Vreme</label>
-                <input type="time" id="Vreme" name="Vreme" required>
+                <label for="Date">Time</label>
+                <select id="Time" name="Time" required>
+                    <option value="12h">12h</option>
+                    <option value="16h">16h</option>
+                </select>
 
-                <label for="Lokacija-polaska">Mesto Polaska</label>
-                <input type="text" id="Lokacija-polaska" name="Lokacija-polaska" placeholder="Upiši mesto" required>
+                <label for="Date">Select Ride</label>
+                <select id="Ride" name="Ride" required>
+                    <option value="Grmožur">Grmožur - 1h</option>
+                    <option value="Panorama">Panorama view of Skadar Lake - 2h</option>
+                    <option value="Monastery Vranjina">Monastery Vranjina - 3h</option>
+                    <option value="Poseljani Village">Poseljani Village - 4h</option>
+                </select>
 
-                <label for="Lokacija-odlaska">Mesto Odlaska</label>
-                <input type="text" id="Lokacija-odlaska" name="Lokacija-odlaska" placeholder="Upiši mesto" required>
+                <label for="Putnika">Number of Passengers</label>
+                <input type="number" id="Putnika" name="Putnika" min="1" max="20" required>
 
-                <label for="Putnika">Broj putnika</label>
-                <input type="number" id="Putnika" name="Putnika" min="1" max="5" required>
-
-                <button type="submit">Rezerviši</button>
+                <button type="submit" class="rez-btngs">Book Now</button>
             </form>
             <div class="map">
-                <img src="vozilo3.jpg" alt="World Map">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2953.5480584985635!2d19.08875587502054!3d42.24546734233517!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x134dd9e9df096e9d%3A0x9df6664e5d06f647!2sNoah&#39;s%20Ark%20Skadar%20Lake%20Cruise!5e0!3m2!1sen!2s!4v1739956956169!5m2!1sen!2s" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
         </main>
         </div>
@@ -70,16 +73,16 @@
       <footer>
         <div class="footer">
         <div class="row">
-        <a href="tel:+382 (67) 396-667"><i class="fas fa-phone-alt"></i></a>
-        <a href="https://www.instagram.com/eliteridetransfer/"><i class="fab fa-instagram"></i></a>
-        <a href="mailto:eliteridecg@gmail.com"><i class="fas fa-envelope"></i></a>
+            <a href="tel:+382 (67) 003-446"><i class="fas fa-phone-alt"></i></a>
+            <a href="https://www.instagram.com/noahsarkskadarlake/"><i class="fab fa-instagram"></i></a>
+            <a href="mailto:radomanilija06@gmail.com"><i class="fas fa-envelope"></i></a>
         </div>
         
         <div class="row">
             <ul class="ftrul">
                 <li><a class="ftrlink" href="index.html">Početna</a></li>
                 <li><a class="ftrlink" href="O-nama.html">O nama</a></li>
-                <li><a class="ftrlink" href="usluge.html">Usluge</a></li>
+                <li><a class="ftrlink" href="tours.html">Tours</a></li>
                 <li><a class="ftrlink" href="vozila.html">Vozila</a></li>
                 <li><a class="ftrlink" href="kontakt.html">Kontakt</a></li>
             </ul>

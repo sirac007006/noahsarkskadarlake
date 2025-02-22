@@ -10,10 +10,11 @@
 
 body {
   font-family: "Montserrat", sans-serif;
+  background-color: #f4f4f4;
 }
 
 section {
-  height: 130vh; /* Dovoljno prostora za testiranje skrolovanja */
+
   width: 100%;
   background: #f4f4f4;
 }
@@ -24,6 +25,7 @@ nav {
   position: fixed;
   z-index: 10;
   transition: background-color 0.3s ease, box-shadow 0.3s ease;
+  background-color: white;
 }
 
 
@@ -44,6 +46,27 @@ nav.solid {
   width: 100%;
   height: auto;
 }
+.rez-btng {
+  background-color: #f1c40f;
+  font-weight: bold;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 1px;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+.rez-btngs {
+  background-color: #133B5C;
+  font-weight: bold;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 1px;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+.rez-btn:hover {
+  background-color: #333;
+}
 
 nav ul {
   float: right;
@@ -57,14 +80,15 @@ nav ul li {
 }
 
 nav ul li a {
-  color: white;
   font-size: 17px;
   padding: 7px 13px;
   border-radius: 3px;
   text-transform: uppercase;
   transition: color 0.3s ease;
 }
-
+nav ul li a {
+  color: black;
+}
 nav.solid ul li a {
   color: black;
 }
@@ -95,75 +119,70 @@ nav ul li a:hover {
   transition: .5s;
 }
 
-.divbgslika {
-  width: 100%;
-  height: 130vh;
-  background-image: url('zastoiz.jpg');
-  background-size: contain; /* Menja na contain da bi se prikazala cela slika */
-  background-position: center;
-  background-repeat: no-repeat;
-  display: flex;
-  justify-content: left;
-  align-items: center;
-  flex-wrap: wrap;
-  padding-right: 5vw;
-  padding-top: 0;
-}
-.sadrzajpocetna{
-  width: 50vw;
-  color: #fff;
-  text-align: left;
-  padding-left: 13vw;
+.contact-section {
+  text-align: center;
+  padding: 50px 20px;
+  color: #060D0D;
+  padding-top: 20vh;
   
 }
-.glavnohomeh1{
-  font-size: 65px;
-}
-.glavnohomep{
-  font-size: 18px;
-  padding-bottom: 25px;
-}
-.imgsrd{
+.text{
   display: flex;
   justify-content: center;
 }
-.srednja{
-  width: 90vw;
-  height: auto;
-  text-align: center;
+
+.contact-section h1 {
+    margin-bottom: 20px;
+    font-size: 2em;
+    font-weight: bold;
 }
-.three-columns {
-  display: flex;
-  justify-content: center;
-  padding: 20px;
-  padding-bottom: 100px;
+.services-divider {
+  width: 100px;
+  height: 3px;
+  background-color: #A8C4D6;
+  margin: 20px auto;
 }
 
-.column {
-  flex: 1;
-  margin: 0 10px;
-  padding: 0 15px;
-  border-right: 1px solid #ccc;
-  max-width: 300px;
+.contact-section p {
+    font-size: 1.2em;
+    margin-bottom: 30px;
+    max-width: 600px;
+    text-align: center;
+    justify-content: center;
 }
 
-.column:last-child {
-  border-right: none;
+.contact-methods {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    flex-wrap: wrap;
 }
 
-h3 {
-  margin-top: 0;
-  color: #333;
+.method {
+    background-color: #133B5C;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px #133b5c;
+    max-width: 300px;
 }
 
-.column p {
-  color: #555;
+.method h2 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+    color: #fff;
 }
+
+.method p {
+    font-size: 1.2em;
+    color: #fff;
+}
+
 .footer{
   background:#133B5C;
   padding:30px 0px;
   font-family: 'Play', sans-serif;
   text-align:center;
+  bottom: 0;
   }
   
   .footer .row{
@@ -204,30 +223,88 @@ h3 {
     color: #fff;
   }
 
-  
 
-/* Stilovi za ekrane šire od 1500px */
+
+.services-divider {
+  width: 100px;
+  height: 3px;
+  background-color: #A8C4D6;
+  margin: 20px auto;
+}
+
+.hero {
+  position: relative;
+  text-align: center;
+}
+
+.hero img {
+  width: 100%;
+  height: 600px;
+  object-fit: cover;
+}
+
+.hero-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.7);
+  font-size: 24px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.tours {
+  padding: 50px 20px;
+  text-align: center;
+}
+
+.tour {
+  background-color: #f4f4f4;
+  padding: 20px;
+  margin: 20px auto;
+  max-width: 800px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  
+}
+
+.pricing {
+  font-size: 18px;
+  text-align: center;
+  padding: 20px;
+  max-width: 600px;
+  margin: auto;
+  
+}
+
+.pricing ul {
+  list-style: none;
+  padding: 0;
+}
+
+.pricing ul li {
+  background-color: #133B5C;
+  color: white;
+  padding: 10px;
+  margin: 5px;
+  border-radius: 5px;
+}
+section{
+  margin-bottom: 20px;
+}
+
+
 @media (max-width: 1500px) {
-  section {
-    height: 147vh; /* Dovoljno prostora za testiranje skrolovanja */
-    background: #f4f4f4;
-  }
-  .divbgslika {
-    background-image: url('zastoiz.jpg');
-    background-size: contain;
-    height: 147vh;
-  }
+
   .logo {
     max-width: 80px;
     max-height: 80px;
     top: 50%;
     left: 1vh;
   }
-  .custom-grid .left-image {
-    width: 100%; /* Širina slike */
-    height: 70%;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
-  }
+
 }
 
 /* Stilovi za ekrane šire od 1400px */
@@ -251,12 +328,7 @@ h3 {
   nav {
     height: 70px;
   }
-  .divbgslika {
-    background-size: cover;
-  }
-  .sadrzajpocetna {
-    width: 80%;
-  }
+
 }
 
 /* Stilovi za ekrane šire od 1050px */
@@ -267,6 +339,7 @@ h3 {
     top: 50%;
     left: 1vh;
   }
+
 }
 
 /* Stilovi za ekrane šire od 900px */
@@ -287,6 +360,7 @@ h3 {
     line-height: 60px;
     color: #133B5C;
   }
+  
   nav ul {
     position: fixed;
     width: 100%;
@@ -314,45 +388,12 @@ h3 {
   #check:checked ~ ul {
     left: 0;
   }
-  .divbgslika {
-    height: 100vh;
-    background-size: cover;
-    padding-right: 2vw;
-    justify-content: center;
-    text-align: center;
-  }
-  section{
-    height: 100vh;
-  }
-  .sadrzajpocetna {
-    width: 90%;
-  }
-  .glavnohomeh1 {
-    font-size: 36px;
-  }
-  .glavnohomep {
-    font-size: 16px;
-  }
-  .three-columns {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    padding: 20px;
-    text-align: center;
-  }
-  
-  .column {
-    flex: 1;
-    margin: 15px 0;
-    padding: 15px 0;
-    border-bottom: 1px solid #ccc;
-    border-right: 0;
-    max-width: 300px;
-  }
-  .column:last-child {
-    border-bottom: none;
-  }
+  .container {
+    max-width: 90%;
+    padding: 15px;
+}
+
+
   .footer {
     text-align: center;
     padding: 20px 10px;
@@ -373,7 +414,48 @@ h3 {
     padding-left: 5px;
     padding-right: 5px;
   }
+  .hero-text {
+    font-size: 18px;
+    padding: 10px;
+    width: 90%;
+  }
 
+  /* Prilagođavanje veličine slike u hero sekciji */
+  .hero img {
+    height: 400px;
+  }
+
+  /* Poboljšano prikazivanje tura */
+  .tour {
+    max-width: 100%;
+    margin: 10px;
+    padding: 15px;
+  }
+
+  /* Poboljšano prikazivanje cenovnika */
+  .pricing {
+    font-size: 16px;
+    padding: 15px;
+    width: 100%;
+  }
+
+  .pricing ul li {
+    font-size: 14px;
+    padding: 8px;
+  }
+
+  /* Prilagođavanje forme kontakt sekcije */
+  .contact-section {
+    padding: 30px 10px;
+  }
+
+  .contact-methods {
+    flex-direction: column;
+    gap: 20px;
+  }
+  section{
+    margin-bottom: 0px;
+  }
 }
 
 
@@ -402,13 +484,7 @@ h3 {
 /* Stilovi za ekrane šire od 376px */
 /* Popravljanje za mobilne uređaje */
 @media (max-width: 375px) {
-
-
-  h2 {
-    font-size: 20px; /* Naslov je manji */
-    text-align: center; /* Poravnava naslov na sredinu */
-    margin-bottom: 15px; /* Dodaje razmak ispod naslova */
-  }
+  
 }
 
 
