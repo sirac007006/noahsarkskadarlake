@@ -118,9 +118,9 @@ nav ul li a:hover {
 
 .divbgslika {
   width: 100%;
-  height: 150vh;
+  height: 150vh; /* Smanjeno sa 150vh za bolji prikaz na cijelom ekranu */
   background-image: url('pocetnaslvelika.jpg');
-  background-size: contain; /* Menja na contain da bi se prikazala cela slika */
+  background-size: cover; /* Promijenjeno iz 'contain' u 'cover' */
   background-position: center;
   background-repeat: no-repeat;
   display: flex;
@@ -397,13 +397,13 @@ iframe{
 /* Stilovi za ekrane šire od 1500px */
 @media (max-width: 1500px) {
   section {
-    height: 105vh; /* Dovoljno prostora za testiranje skrolovanja */
+    height: 130vh; /* Prilagođeno */
     background: #f4f4f4;
   }
   .divbgslika {
     background-image: url('pocetnasl.jpg');
-    background-size: contain;
-    height: 125vh;
+    background-size: cover; /* Promijenjeno iz 'contain' u 'cover' */
+    height: 130vh; /* Prilagođeno */
   }
   .logo {
     max-width: 80px;
